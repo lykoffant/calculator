@@ -1,0 +1,4 @@
+{
+  "*.{vue,js,jsx,cjs,mjs}": "npm run lint:es",
+  "*.{vue,css}": "npm run lint:style"
+}

@@ -1,0 +1,54 @@
+{
+  "name": "calculator",
+  "version": "0.0.0",
+  "private": true,
+  "description": "A simple calculator based on Vue",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "concurrently -g 'npm run lint:es' 'npm run lint:style'",
+    "lint:fix": "concurrently -g 'npm run lint:es:fix' 'npm run lint:style:fix'",
+    "lint:es": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --ignore-path .gitignore",
+    "lint:es:fix": "npm run lint:es -- --fix",
+    "lint:style": "stylelint src/**/*.{vue,css}",
+    "lint:style:fix": "npm run lint:style -- --fix",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lykoffant/calculator.git"
+  },
+  "keywords": [
+    "calculator",
+    "vue",
+    "single-page-app",
+    "pet-project"
+  ],
+  "author": "Anton Lykov",
+  "bugs": {
+    "url": "https://github.com/lykoffant/calculator/issues"
+  },
+  "dependencies": {
+    "vue": "^3.2.45"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.4.1",
+    "@commitlint/config-conventional": "^17.4.0",
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "concurrently": "^7.6.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "husky": "^8.0.3",
+    "prettier": "^2.7.1",
+    "stylelint": "^14.16.1",
+    "stylelint-config-clean-order": "^2.3.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^29.0.0",
+    "vite": "^4.0.0",
+    "vite-plugin-stylelint": "^4.1.6"
+  }
+}
