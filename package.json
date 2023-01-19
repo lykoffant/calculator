@@ -31,6 +31,8 @@
     "url": "https://github.com/lykoffant/calculator/issues"
   },
   "dependencies": {
+    "@babel/runtime": "^7.20.7",
+    "@uivjs/vue-github-corners": "^1.0.1",
     "vue": "^3.2.45"
   },
   "devDependencies": {
