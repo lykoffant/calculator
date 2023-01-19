@@ -1,5 +1,11 @@
 <script>
+import GithubCorner from "@uivjs/vue-github-corners";
+
 export default {
+  components: {
+    "github-corner": GithubCorner,
+  },
+
   data() {
     return {
       raw: "",
@@ -124,6 +130,12 @@ export default {
       {{ button.value }}
     </button>
   </div>
+
+  <github-corner
+    fixed
+    :size="60"
+    href="https://github.com/lykoffant/calculator"
+  />
 </template>
 
 <style scoped>
