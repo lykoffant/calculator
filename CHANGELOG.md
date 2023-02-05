@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/lykoffant/calculator/compare/v1.0.0...v1.0.1) (2023-02-05)
+
+
+### Bug Fixes
+
+* add a favicon ([53a1b0d](https://github.com/lykoffant/calculator/commit/53a1b0d9fccd1d3aa74fd62dc81ccba8db72a712))
+
 ## 1.0.0 (2023-01-19)
 
 
